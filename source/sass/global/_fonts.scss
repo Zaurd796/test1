@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Cormorant";
+  font-display: swap;
+  src: url("../fonts/cormorantRegular.woff2") format("woff2"),
+    url("../fonts/cormorantRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/robotoLight.woff2") format("woff2"),
+    url("../fonts/robotoLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
