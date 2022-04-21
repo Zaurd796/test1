@@ -45,8 +45,7 @@
   position: absolute;
   z-index: -1;
 
-  animation-name: cloud;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -55,31 +54,106 @@
 .woman__img-cloud--first {
   top: 39px;
   left: 29px;
-  animation-name: cloud;
+
+  animation-name: cloud1;
 }
 
 .woman__img-cloud--second {
   top: 158px;
   left: 91px;
+
+  animation-name: cloud2;
 }
 
 .woman__img-cloud--third {
   top: 88px;
   left: 366px;
+
+  animation-name: cloud3;
 }
 
 .woman__img-cloud--fourth {
   top: 141px;
   left: 602px;
+
+  animation-name: cloud4;
 }
 
-@keyframes cloud {
+@keyframes cloud1 {
   0% {
-    left: 0;
+    transform: translateX(-29px);
   }
 
   100% {
-    right: 0;
+    transform: translateX(699px);
   }
 }
 
+@keyframes cloud2 {
+  0% {
+    transform: translateX(-91px);
+  }
+
+  100% {
+    transform: translateX(621px);
+  }
+}
+
+@keyframes cloud3 {
+  0% {
+    transform: translateX(-366px);
+  }
+
+  100% {
+    transform: translateX(346px);
+  }
+}
+
+@keyframes cloud4 {
+  0% {
+    transform: translateX(-602px);
+  }
+
+  100% {
+    transform: translateX(8px);
+  }
+}
+
+@media (max-width: 900px) {
+  .woman__img-cloud {
+    animation: none;
+  }
+
+  .woman__img-cloud--fourth {
+    display: none;
+  }
+}
+
+@media (max-width: 649px) {
+  .woman__img-cloud {
+    display: none;
+  }
+
+  .woman__img {
+    display: none;
+  }
+
+  .woman__content {
+    max-width: initial;
+    padding: 35px 10px;
+
+    text-align: center;
+  }
+
+  .woman__title {
+    max-width: initial;
+  }
+
+  .woman__descr:first-of-type {
+    max-width: initial;
+  }
+
+  .woman__descr + .woman__descr {
+    max-width: initial;
+  }
+}
